@@ -22,7 +22,7 @@ body {
 main {
   background: url(images/background.svg) no-repeat center/cover;
   width: 100vw;
-  min-height: 812px;;
+  min-height: 812px;
   height: 100vh;
 }
 
@@ -86,4 +86,18 @@ ul {
   gap: 0.5rem;
 
   justify-content: center;
+}
+
+@media (min-width: 720px)  {
+  
+  body{
+    background: url(images/Desktop.svg) no-repeat center/cover;
+  }
+
+  main {
+    background: url(images/background.svg) no-repeat center/cover;
+    width: 358px;
+    height: 540px;
+  }
+
 }
