@@ -93,27 +93,56 @@ ul {
   body{
     
     background: url(images/Desktop.svg) no-repeat center/cover;
-    background-color: #121214;
   }
 
   main {
-    background: url(images/background.svg) no-repeat center/cover;
+    background: url(images/bg_desktop.svg) no-repeat center/cover;
     width: 100vw;
+    min-height: 812px;
     height: 100vh;
   }
+}
 
-  @media (min-width: 960px)  {
+  @media (min-width: 1024px)  {
   
     body{
-      
       background: url(images/Desktop.svg) no-repeat center/cover;
-      background-color: #121214;
     }
   
     main {
-      background: url(images/bg-desktop.svg) no-repeat center/cover;
-      width: 358px;
-      height: 540px;
+      background: url(images/bg_desktop.svg) no-repeat center/cover;
+      width: 100vw;
+      min-height: 812px;
+      height: 100vh;
     }
+  }
 
-}
+  @media (min-width: 1440px)  {
+  
+    body{
+      background: url(images/Desktop.svg) no-repeat center/cover;
+    }
+  
+    main {
+      background: url(images/bg_desktop.svg) no-repeat center/cover;
+      width: 100vw;
+      min-height: 812px;
+      height: 100vh;
+    }
+  }
+
+  @media (min-width: 1920px)  {
+  
+    body{
+      background: url(images/Desktop.svg) no-repeat center/cover;
+    }
+  
+    main {
+      background: url(images/bg_desktop.svg) no-repeat center/cover;
+      width: 100vw;
+      min-height: 812px;
+      height: 100vh;
+    }
+  }
+
+  
