@@ -17,7 +17,7 @@ body {
   place-items: center;
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
-}
+  }
 
 main {
   background: url(images/background.svg) no-repeat center/cover;
@@ -54,6 +54,19 @@ main {
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
 
+.animation{
+  animation: rotation 10s linear infinite;
+}
+
+@keyframes rotation{
+  0% {
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
 h1 {
   font-size: 1.5rem;
   margin-top: 1.5rem;
@@ -88,85 +101,52 @@ ul {
   justify-content: center;
 }
 
-@media (min-width: 720px)  {
-  
-  main {
-    background: url(images/background.svg) no-repeat center/cover ;
-}
-
-/* @media (min-width: 720px)  {
-  
-  body{
-    
-    background: url(images/Desktop.svg) no-repeat center/cover;
-  }
+@media (min-width: 450px) {
 
   main {
     background: url(images/bg_desktop.svg) no-repeat center/cover;
     width: 100vw;
     min-height: 812px;
     height: 100vh;
-  } 
+  }
+
+  .avatar {
+    width: 10rem;
+    margin: 11.5rem auto 0;
+  
+    position: relative;
+  }
+}
+@media (min-width: 720px) {
+
+  main {
+    background: url(images/bg_desktop.svg) no-repeat center/cover;
+    width: 100vw;
+    min-height: 812px;
+    height: 100vh;
+  }
+
+  .avatar {
+    width: 10rem;
+    margin: 15rem auto 0;
+  
+    position: relative;
+  }
 }
 
-  @media (min-width: 1024px)  {
-  
-    body{
-      background: url(images/Desktop.svg) no-repeat center/cover;
-    }
-  
-    main {
-      background: url(images/bg_desktop.svg) no-repeat center/cover;
-      width: 100vw;
-      min-height: 812px;
-      height: 100vh;
-    }
+@media (min-width: 1024px) {
+	
+  main {
+    background: url(images/bg_desktop.svg) no-repeat center/cover;
+    width: 100vw;
+    min-height: 812px;
+    height: 100vh;
   }
 
-  @media (min-width: 1440px)  {
+  .avatar {
+    width: 10rem;
+    margin: 15rem auto 0;
   
-    body{
-      background: url(images/Desktop.svg) no-repeat center/cover;
-    }
-  
-    main {
-      background: url(images/bg_desktop.svg) no-repeat center/cover;
-      width: 100vw;
-      min-height: 812px;
-      height: 100vh;
-    }   
+    position: relative;
   }
-
-  @media (min-width: 1920px)  {
-  
-    body{
-      background: url(images/Desktop.svg) no-repeat center/cover;
-    }
-  
-    main {
-      background: url(images/bg_desktop.svg) no-repeat center/cover;
-      width: 100vw;
-      min-height: 812px;
-      height: 100vh;
-    }
-  }
-
-  @media (min-width: 2560px)  {
-  
-    body{
-      background: url(images/Desktop.svg) no-repeat center/cover;
-    }
-  
-    main {
-      background: url(images/bg_desktop.svg) no-repeat center/cover;
-      width: 100vw;
-      min-height: 812px;
-      height: 100vh;
-    }
-
-    .avatar {
-      width: 10rem;
-      margin: 16rem auto 0;
-      position: relative;
-    }
-  } */
+}
